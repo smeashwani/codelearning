@@ -17,11 +17,14 @@ public class OperatorExample {
 		System.out.println(c);
 		System.out.println("=====logical operator===========");
 		
-		int p=5;
+		int p=51;
 		if( p++ > 2 || p++ > 10 || p++ > 1) {}
 		System.out.println(p);
 		
 		System.out.println("================");
-		
+		if(p>11); {
+			System.out.println("p >11");
+		}
+		System.out.println("end");
 	}
 }
