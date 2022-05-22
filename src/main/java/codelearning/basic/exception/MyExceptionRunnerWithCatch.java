@@ -16,6 +16,9 @@ public class MyExceptionRunnerWithCatch {
 			System.out.println("RuntimeException");
 		}
 		catch(Exception e) {
+			if(e instanceof ArithmeticException) {
+				
+			}
 			System.out.println("Exception");
 		}
 		finally {
