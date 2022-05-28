@@ -1,3 +1,5 @@
 
 *.class
 target/classes/META-INF/maven/com.training/codelearning/pom.properties
+*.jpeg
+*.txt
