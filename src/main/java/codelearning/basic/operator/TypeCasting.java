@@ -6,7 +6,7 @@ public class TypeCasting {
 		 int j = b;
 		 
 		 double d =12.15;
-		 float f = d;
+		 float f = (float)d;
 	}
 
 }
