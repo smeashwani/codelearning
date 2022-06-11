@@ -21,14 +21,19 @@ public class Sample {
 //		System.out.println(locale.getCountry());  
 		 ResourceBundle bundle = ResourceBundle.getBundle("MessageBundle",locale);
 		 String greeting = bundle.getString("greeting");
-		//  System.out.println("Message in नमस्ते"+locale +":"+greeting);
+		System.out.println("Message in "+locale +":"+greeting);
 		 Properties properties = System.getProperties();
 		 System.out.println(properties.getProperty("file.encoding"));
 		 
-		 Properties appProps = new Properties();
-		 appProps.load(new FileInputStream("MessageBundle_en_US.properties"));
-		 String value = appProps.getProperty("greeting");
-		 System.out.println(value);
+//		 Properties appProps = new Properties();
+//		 appProps.load(new FileInputStream("MessageBundle_en_US.properties"));
+//		 String value = appProps.getProperty("greeting");
+//		 System.out.println(value);
+		 
+		 for(int k = 2029; k<=2360 ; k++)
+	        {
+	            System.out.print(k+  " "+(char)k+" ");
+	        }
 	}
 
 }
