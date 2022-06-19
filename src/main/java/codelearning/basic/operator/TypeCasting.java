@@ -7,6 +7,8 @@ public class TypeCasting {
 		 
 		 double d =12.15;
 		 float f = (float)d;
+		 
+		 System.out.println("welcome");
 	}
 
 }
