@@ -5,3 +5,4 @@ target/classes/META-INF/maven/com.training/codelearning/pom.properties
 *.txt
 *.properties
 *.properties
+/target/
