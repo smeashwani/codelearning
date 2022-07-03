@@ -1,20 +1,15 @@
 package codelearning.basic.oops;
 
 public class Runner {
-	static 
-	{
-		System.out.println("welcome");
-	}
 	
 	public static void main(String[] args) {
+		MathUtils m = new MathUtils();
+		m.a=10;
+		m.b=20;
+		System.out.println(m.a +" " +m.b);
+		m.add(m.a, m.b, 12);
 		
-		Employee e1 = new Employee();
-		Employee e2 = new Employee();
-		Employee e3 = new Employee();
-		Employee e4 = new Employee();
-		Employee e5 = new Employee();
-		Employee e6 = new Employee();
-		System.out.println("end");
+		System.out.println(m.a +" " + m.b);
 		
 	}
 
