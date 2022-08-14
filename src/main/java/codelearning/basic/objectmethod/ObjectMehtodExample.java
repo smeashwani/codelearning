@@ -2,17 +2,23 @@ package codelearning.basic.objectmethod;
 
 public class ObjectMehtodExample {
 	public static void main(String[] args) {
-		Employee e = new Employee();
-		e.setName("ducat");
-		e.setAge(18);
-		e.setSal(18000);
+//		Employee e1 = new Employee("ducat",22,22000);
+//		Employee e2 = new Employee("ducat",22,22001);
+//		System.out.println(e1 == e2);
+//		System.out.println(e1.equals(e2));
 		
-		Employee e1 = new Employee();
-		e1.setName("ducat");
-		e1.setAge(18);
-		e1.setSal(18000);
-		System.out.println(e1);
+//		String s = new String("welcome");
+//		String s1 = new String("welcome");
+//		System.out.println(s == s1);
+//		System.out.println(s.equals(s1));
 		
-		System.out.println(e.equals(e1));
+		String s="Welcome";
+		String s1="Welcome";
+		String s2 = new String("Welcome");
+		System.out.println(s == s1);
+		System.out.println(s.intern() == s);
+		
+		
+		
 	}
 }

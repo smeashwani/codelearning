@@ -19,13 +19,6 @@ public class MyString {
 		String join = String.join("-", arr);
 		System.out.println(join);
 		
-		String s1 = "abc";
-		String s2 = "abc";
-		String ss1 = new String("abc");
-		System.out.println(s1 == s2);
-		System.out.println(s1 == ss1);
-		System.out.println(s1 == ss1.intern());
-		
 		StringBuffer sb = new StringBuffer("Welcome ");
 		sb.append(name);
 		sb.append(" in ducat ");

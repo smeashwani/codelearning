@@ -1,13 +1,10 @@
 package codelearning.basic.nested;
 
-public class NestedClass {
-	public static void main(String[] args) {
-		int a=10;
-		Simple s = new Simple() {
-			void check() {
-				System.out.println(a);
-			}
-		};
-		
+public cl\u0061ss NestedClass {
+	public st\u0061tic void m\u0061in(String[] args) {
+		 int a = 10;
+		 char ch = '\u0061';
+		 System.out.println(ch);
 	} 
 }
+ 
