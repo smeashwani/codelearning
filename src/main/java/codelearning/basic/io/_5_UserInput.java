@@ -1,6 +1,8 @@
 package codelearning.basic.io;
 
 import java.io.Console;
+import java.util.Scanner;
+
 
 public class _5_UserInput {
 	public static void main(String[] args) {
@@ -15,9 +17,9 @@ public class _5_UserInput {
 //			e.printStackTrace();
 //		}
 		
-//		Scanner scan = new Scanner(System.in);
-//		String next = scan.next();
-//		System.out.print(next);
+		Scanner scan = new Scanner(System.in);
+		String next = scan.next();
+		System.out.print(next);
 		
 		
 		
@@ -28,6 +30,6 @@ public class _5_UserInput {
 		
 		Console console = System.console();
 		char readLine[] = console.readPassword();
-		System.out.println(new String(readLine));
+//		System.out.println(new String(readLine));
 	}
 }

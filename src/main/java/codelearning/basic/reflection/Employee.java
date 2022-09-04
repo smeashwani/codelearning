@@ -2,9 +2,14 @@ package codelearning.basic.reflection;
 
 public class Employee {
 	public String companyName;
+	static public String companyName1;
 	private String name;
 	private int age;
 	private int salary;
+	
+	private void test() {
+		System.out.println("welcome to ducat");
+	}
 	
 	public Employee() {
 		System.out.println("const...");

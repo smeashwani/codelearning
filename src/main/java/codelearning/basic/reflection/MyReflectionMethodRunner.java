@@ -8,7 +8,7 @@ public class MyReflectionMethodRunner {
 	public static void main(String[] args) throws ClassNotFoundException{
 		EmployeeDetails obj = new EmployeeDetails();
 		Class clz = obj.getClass();
-		Method[] declaredMethods = clz.getDeclaredMethods();
+		Method[] declaredMethods = clz.getMethods();
 		for (Method method : declaredMethods) {
 			System.out.println(method.getName());
 			System.out.println(method.getParameterCount());

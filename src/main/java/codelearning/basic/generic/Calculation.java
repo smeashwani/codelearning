@@ -1,10 +1,10 @@
 package codelearning.basic.generic;
 
-public class Calculation<T1,T2> {
+public class Calculation<T1> {
 	private T1 a;
-	private T2 b;
+	private T1 b;
 	
-	Calculation(T1 a, T2 b){
+	Calculation(T1 a, T1 b){
 		this.a = a;
 		this.b = b;
 	}

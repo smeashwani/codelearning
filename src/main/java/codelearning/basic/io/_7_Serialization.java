@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 public class _7_Serialization {
 	public static void main(String[] args) {
-		Employee emp = new Employee("ducat",22,"ducatpwd");
+		Employee emp = new Employee("ducat","password");
 		
 //		try( FileOutputStream fos = new FileOutputStream("save.ser1");
 //			ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -16,7 +16,7 @@ public class _7_Serialization {
 //		}catch(Exception e) {
 //			e.printStackTrace();
 //		}
-//		
+		
 		
 		try( FileInputStream fos = new FileInputStream("save.ser1");
 				ObjectInputStream oos = new ObjectInputStream(fos);

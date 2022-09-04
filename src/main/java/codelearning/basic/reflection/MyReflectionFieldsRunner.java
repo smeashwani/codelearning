@@ -7,7 +7,7 @@ public class MyReflectionFieldsRunner {
 	public static void main(String[] args) throws ClassNotFoundException{
 		EmployeeDetails obj = new EmployeeDetails();
 		Class clz = obj.getClass();
-		Field[] fields = clz.getDeclaredFields();
+		Field[] fields = clz.getFields();
 		for (Field field : fields) {
 			System.out.println(Modifier.toString(field.getModifiers()) +" "+field.getType() + " "+ field.getName());
 			try {
