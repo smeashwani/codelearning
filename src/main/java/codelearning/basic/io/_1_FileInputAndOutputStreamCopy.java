@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-//Direct :- Copy completed 38882
+//Direct :- Copy completed 38_882
 //buffer Copy completed 467
 public class _1_FileInputAndOutputStreamCopy {
 
@@ -14,6 +14,7 @@ public class _1_FileInputAndOutputStreamCopy {
 		File fi = new File("Image10MB.jpg");
 		File fo = new File("Copy_Image10MB.jpg");
 		long start = System.currentTimeMillis();
+		//copy(fi, fo);
 		copyWithBuffer(fi, fo);
 		long end = System.currentTimeMillis();
 		System.out.printf("Copy completed %d", end-start);

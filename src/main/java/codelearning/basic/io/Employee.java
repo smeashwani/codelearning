@@ -1,40 +1,38 @@
 package codelearning.basic.io;
 
-import java.io.Serializable;
+import java.io.Externalizable;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
 
-public class Employee implements Serializable {
+public class Employee extends EmployeeParent implements Externalizable{
 	
-	
-	/**
+	 /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1905144961568353043L;
-	private String name;
-	private String password;
-	
-	
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	private static final long serialVersionUID = 7341095861939601609L;
 
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	String name;
+	String password;
+	
+	
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", pwd=" + "]";
-	}
-	public Employee(String name, String password) {
-		super();
-		this.name = name;
-		this.password =password;
+		return "Employee [name=" + name + ", pwd=" + password + companyName+"]";
 	}
 	public Employee () { }
+	
+	@Override
+	public void writeExternal(ObjectOutput out) throws IOException {
+		out.writeUTF(name);
+		out.writeUTF(password);
+		out.writeUTF(companyName);
+	}
+	@Override
+	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+		name = in.readUTF();
+		password = in.readUTF();
+		companyName = in.readUTF();
+	}
 
 }

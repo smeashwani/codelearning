@@ -1,9 +1,7 @@
 package codelearning.basic.io;
 
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-
-public class Runner extends SuperRunner{
+public class Runner extends SuperRunner
+{
 	
 	public static void main(String[] args) {
 		System.out.println("Runner.main()");

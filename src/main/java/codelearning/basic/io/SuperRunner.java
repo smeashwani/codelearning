@@ -15,7 +15,6 @@ public class SuperRunner {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 
 }

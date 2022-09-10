@@ -6,3 +6,7 @@ target/classes/META-INF/maven/com.training/codelearning/pom.properties
 *.properties
 *.properties
 /target/
+*.class
+*.jpg
+*.class
+*.class
