@@ -6,8 +6,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 //Direct :- Copy completed 38_882
 //buffer Copy completed 467
+//copyWithNIO  19
 public class _1_FileInputAndOutputStreamCopy {
 
 	public static void main(String[] args) {
@@ -15,7 +20,8 @@ public class _1_FileInputAndOutputStreamCopy {
 		File fo = new File("Copy_Image10MB.jpg");
 		long start = System.currentTimeMillis();
 		//copy(fi, fo);
-		copyWithBuffer(fi, fo);
+		//copyWithBuffer(fi, fo);
+		copyWithNIO(fi, fo);
 		long end = System.currentTimeMillis();
 		System.out.printf("Copy completed %d", end-start);
 	}
@@ -48,5 +54,16 @@ public class _1_FileInputAndOutputStreamCopy {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	private static void copyWithNIO(File fi, File fo) {
+	try {	
+		Path path = Files.copy(Paths.get(fi.getAbsolutePath()), Paths.get(fo.getAbsolutePath()), StandardCopyOption.REPLACE_EXISTING);//copy with REPLACE_EXISTING option
+		//System.out.println("Target file Path : "+path);
+		//System.out.println("Copied Content : \n"+new String(Files.readAllBytes(path)));
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+
 	}
 }

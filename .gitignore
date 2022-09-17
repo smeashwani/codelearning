@@ -10,3 +10,5 @@ target/classes/META-INF/maven/com.training/codelearning/pom.properties
 *.jpg
 *.class
 *.class
+*.class
+*.class
