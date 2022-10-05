@@ -1,11 +1,21 @@
 package codelearning.basic.collection;
 
-public class Employee {
+public class Employee implements Comparable {
 	int age;
 	int salary;
 	String name;
 	
-	
+	@Override
+	public int compareTo(Object o) {
+		
+		Employee other = (Employee) o;
+		System.out.println("compare with"+other.getAge());
+		
+		if(this.salary >=  other.salary) return 1;
+		if(this.salary <=  other.salary) return -1;
+		
+		return 0;
+	}
 	
 	@Override
 	public String toString() {
@@ -15,7 +25,8 @@ public class Employee {
 	@Override
 	public boolean equals(Object obj) {
 		System.out.println("equals");
-		return true;
+		Employee other = (Employee)obj;
+		return this.salary == other.salary;
 	}
 	
 	@Override
