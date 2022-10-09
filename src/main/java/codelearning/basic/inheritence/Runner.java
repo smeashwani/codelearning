@@ -3,11 +3,13 @@ package codelearning.basic.inheritence;
 public class Runner {
 	
 	public static void main(String[] args) {
-		Parent p = new Parent();
-		p.add(0, 0, 0);
-		Child c = new Child();
-		c.sub(0, 0);
-		c.add(2.0f,2.0f);
+		ContractImpl obj = new ContractImpl();
+		obj.defaultMethod();
+//		Parent p = new Parent();
+//		p.add(0, 0, 0);
+//		Child c = new Child();
+//		c.sub(0, 0);
+//		c.add(2.0f,2.0f);
 	}
 
 }

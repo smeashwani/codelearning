@@ -1,5 +1,7 @@
 package codelearning.basic.collection;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.ListIterator;
@@ -8,26 +10,31 @@ import java.util.Vector;
 public class Example {
 	public static void main(String[] args) {
 		Vector<Employee> l = new Vector<Employee>();
+		l.add(new Employee(21,21000,"Guest-4"));
 		l.add(new Employee(23,23000,"Guest-1"));
 		l.add(new Employee(21,24000,"Guest-2"));
 		l.add(new Employee(22,22000,"Guest-3"));
-		l.add(new Employee(21,21000,"Guest-4"));
-		Enumeration<Employee> elements = l.elements();
-		while(elements.hasMoreElements()) {
-			Employee nextElement = elements.nextElement();
-			System.out.println(nextElement);
-		}
+	
 		
+		Collections.sort(l,Comparator.comparing(Employee ::getName));
+		System.out.println(l);
 		
-		ListIterator<Employee> listIterator = l.listIterator();
-		while(listIterator.hasNext()) {
-			Employee next = listIterator.next();
-			System.out.println(next);
-		}
-		while(listIterator.hasPrevious()) {
-			Employee next = listIterator.previous();
-			System.out.println(next);
-		}
+//		Enumeration<Employee> elements = l.elements();
+//		while(elements.hasMoreElements()) {
+//			Employee nextElement = elements.nextElement();
+//			System.out.println(nextElement);
+//		}
+		
+//		
+//		ListIterator<Employee> listIterator = l.listIterator();
+//		while(listIterator.hasNext()) {
+//			Employee next = listIterator.next();
+//			System.out.println(next);
+//		}
+//		while(listIterator.hasPrevious()) {
+//			Employee next = listIterator.previous();
+//			System.out.println(next);
+//		}
 //		Iterator<Employee> iterator = l.iterator();
 //		while(iterator.hasNext()) {
 //			Employee next = iterator.next();
