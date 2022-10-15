@@ -16,7 +16,21 @@ public class Example {
 		l.add(new Employee(22,22000,"Guest-3"));
 	
 		
-		Collections.sort(l,Comparator.comparing(Employee ::getName));
+//		Collections.sort(l,new Comparator<Employee>() {
+//			@Override
+//			public int compare(Employee first, Employee second) {
+//				if(first.name.compareTo(second.name) >= 1) return 1;
+//				if(first.name.compareTo(second.name) <=  1) return -1;
+//				return 0;
+//			}
+//		});
+		
+		Collections.sort(l,(Employee first, Employee second) -> {
+				if(first.name.compareTo(second.name) >= 1) return 1;
+				if(first.name.compareTo(second.name) <=  1) return -1;
+				return 0;
+			});
+		
 		System.out.println(l);
 		
 //		Enumeration<Employee> elements = l.elements();
