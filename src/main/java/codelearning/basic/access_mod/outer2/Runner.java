@@ -11,6 +11,7 @@ public class Runner extends Employee {
 		defaultMethod();
 		protectedMethod();
 		publicMethod();
-		
 	}
+	
+	
 }

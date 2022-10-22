@@ -5,6 +5,10 @@ public class Employee implements Comparable {
 	int salary;
 	String name;
 	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	@Override
 	public int compareTo(Object o) {
 		

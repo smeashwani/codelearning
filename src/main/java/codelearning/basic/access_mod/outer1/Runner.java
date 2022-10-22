@@ -16,6 +16,5 @@ public class Runner extends Employee  {
 		protectedMethod();
 		publicMethod();
 		max(20, 21);
-		
 	}
 }
