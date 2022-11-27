@@ -4,12 +4,12 @@ public class MyString {
 	public static void main(String[] args) {
 		String str ="welcome to ducat";
 		String str1 =new String("welcome to ducat");
-		System.out.println(str.charAt(0));
-		str  = str.concat(" in india");
-		System.out.println(str);
-		System.out.println(str.toLowerCase());
-		System.out.println(str);
-		String valueOf = String.valueOf(true);
+		System.out.println(str.charAt(0)); // w
+		str  = str.concat(" in india"); // 
+		System.out.println(str); // welcome to ducat in india
+		System.out.println(str.toLowerCase()); // welcome to ducat
+		System.out.println(str); 
+		String valueOf = String.valueOf(true); //"true" 
 		String name ="Guest";
 		String ctry = "india";
 		String str2 = "welcome" +name+ "in ducat"; 
@@ -18,26 +18,18 @@ public class MyString {
 		String arr[] = {"red","green","blue"};
 		String join = String.join("-", arr);
 		System.out.println(join);
-		
-		StringBuffer sb = new StringBuffer("Welcome ");
-		sb.append(name);
-		sb.append(" in ducat ");
-		sb.append(ctry);
-		System.out.println(sb);
-		
-		"welcome".toLowerCase().charAt(0);
-		
-		StringBuffer sb1 = new StringBuffer("Welcome ")
-		.append(name)
-		.append(" in ducat ")
-		.append(ctry);
-		System.out.println(sb1);
-		
-		StringBuilder sb2 = new StringBuilder("Welcome ")
-				.append(name)
-				.append(" in ducat ")
-				.append(ctry);
-				System.out.println(sb1);
+		/*
+		 * StringBuffer sb = new StringBuffer("Welcome "); sb.append(name);
+		 * sb.append(" in ducat "); sb.append(ctry); System.out.println(sb);
+		 * 
+		 * "welcome".toLowerCase().charAt(0);
+		 * 
+		 * StringBuffer sb1 = new StringBuffer("Welcome ") .append(name)
+		 * .append(" in ducat ") .append(ctry); System.out.println(sb1);
+		 * 
+		 * StringBuilder sb2 = new StringBuilder("Welcome ") .append(name)
+		 * .append(" in ducat ") .append(ctry); System.out.println(sb1);
+		 */
 		
 	}
 }
