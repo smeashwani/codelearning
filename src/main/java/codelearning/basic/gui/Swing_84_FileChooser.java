@@ -58,10 +58,10 @@ public class Swing_84_FileChooser extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		Swing_84_FileChooser om = new Swing_84_FileChooser();
-		om.setSize(500, 500);
-		om.setLayout(null);
-		om.setVisible(true);
-		om.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		Swing_84_FileChooser frame = new Swing_84_FileChooser();
+		frame.setSize(500, 500);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 }

@@ -1,5 +1,7 @@
 package codelearning.basic.reflection;
 
+//@MyAnnotation(value=10)
+
 public class Employee {
 	public String companyName;
 	static public String companyName1;
@@ -21,6 +23,7 @@ public class Employee {
 		this.age = age;
 		this.salary = salary;
 	}
+	
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + ", salary=" + salary + "]";

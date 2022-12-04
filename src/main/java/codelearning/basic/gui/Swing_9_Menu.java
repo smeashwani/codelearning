@@ -39,7 +39,6 @@ public class Swing_9_Menu implements ActionListener {
 		mb.add(help);
 		ta = new JTextArea();
 		ta.setBounds(5, 5, 360, 320);
-		f.add(mb);
 		f.add(ta);
 		f.setJMenuBar(mb);
 		f.setLayout(null);

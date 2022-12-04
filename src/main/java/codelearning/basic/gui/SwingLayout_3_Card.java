@@ -39,8 +39,8 @@ public class SwingLayout_3_Card extends JFrame implements ActionListener {
 		btn3.addActionListener(this);
 
 		cPane.add("a", btn1); // first card is the button btn1
-		cPane.add("b", btn2); // first card is the button btn2
-		cPane.add("c", btn3); // first card is the button btn3
+		cPane.add("b", btn2); // sec card is the button btn2
+		cPane.add("c", btn3); // third card is the button btn3
 
 	}
 

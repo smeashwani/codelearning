@@ -1,18 +1,20 @@
 package codelearning.basic.gui;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
-import javax.swing.JTextArea;
 
 public class Swing_83_TabbedPane  {
 
 	JFrame f;  
 	Swing_83_TabbedPane(){  
 	    f=new JFrame();  
-	    JTextArea ta=new JTextArea(200,200);  
+	    JButton btn1=new JButton("click1");
+	    JButton btn2=new JButton("click2");
 	    JPanel p1=new JPanel();  
-	    p1.add(ta);  
+	    p1.add(btn1);
+	    p1.add(btn2);  
 	    JPanel p2=new JPanel();  
 	    JPanel p3=new JPanel();  
 	    JTabbedPane tp=new JTabbedPane();  
@@ -29,3 +31,4 @@ public class Swing_83_TabbedPane  {
 		new Swing_83_TabbedPane();
 	}
 }
+
