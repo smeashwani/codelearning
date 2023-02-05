@@ -14,8 +14,4 @@ public class Calculation<T1> {
 		Number b1 = (Number) (this.b);
 		return a1.intValue() + b1.intValue();
 	}
-	
-	public <P1,P2> int add(P1 x,P2 y) {
-		return 0;
-	}
 }

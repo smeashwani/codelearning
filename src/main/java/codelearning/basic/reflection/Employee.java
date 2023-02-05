@@ -3,11 +3,6 @@ package codelearning.basic.reflection;
 //@MyAnnotation(value=10)
 
 public class Employee {
-	public String companyName;
-	static public String companyName1;
-	private String name;
-	private int age;
-	private int salary;
 	
 	private void test() {
 		System.out.println("welcome to ducat");
@@ -47,6 +42,10 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	
+	public String companyName;
+	static public String companyName1;
+	private String name;
+	private int age;
+	private int salary;	
 
 }

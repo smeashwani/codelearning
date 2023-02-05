@@ -6,32 +6,33 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 public class Employee extends EmployeeParent implements Externalizable{
-	
-	 /**
+
+	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 7341095861939601609L;
-
+	private static final long serialVersionUID = 1L;
+	
 	String name;
-	String password;
+	int age;
 	
 	
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", pwd=" + password + companyName+"]";
+		return "Employee [name=" + name + ", age=" +age+ "]";
 	}
+	
 	public Employee () { }
 	
 	@Override
 	public void writeExternal(ObjectOutput out) throws IOException {
 		out.writeUTF(name);
-		out.writeUTF(password);
+		out.writeInt(age);
 		out.writeUTF(companyName);
 	}
 	@Override
 	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
 		name = in.readUTF();
-		password = in.readUTF();
+		age = in.readInt();
 		companyName = in.readUTF();
 	}
 
