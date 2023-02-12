@@ -8,7 +8,7 @@ public class CalucationRunner {
 		Calculation<Double> obj1  = new Calculation(4.8d,3.2f);
 		System.out.println(obj1.getSum());
 //		
-		obj1.<Integer, Long>add(2,3123123l);
+		//obj1.<Integer, Long>add(2,3123123l);
 	}
 
 }
