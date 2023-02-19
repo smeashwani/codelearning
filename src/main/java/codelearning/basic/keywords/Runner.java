@@ -12,6 +12,7 @@ public class Runner {
 		Simple obj =null;
 		Simple.name ="Guest111";
 		obj = new Simple();
+		
 		obj.age=10;
 		obj.salary=15_000;
 		
