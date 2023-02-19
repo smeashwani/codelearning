@@ -1,5 +1,5 @@
 package codelearning.basic.collection_batch1;
-public class Employee{
+public class Employee implements Comparable{
 	int id;
 	String name;
 	double salary;
@@ -28,6 +28,17 @@ public class Employee{
 	public int hashCode() {
 		System.out.println("HashCode");
 		return id;
+	}
+	
+	@Override
+	public int compareTo(Object o) {
+		Employee another = (Employee)o;
+		//return this.salary >= another.salary? 1:-1;
+		int z = this.name.compareTo(another.name);
+		if(z==0) {
+			return this.salary >= another.salary? -1:1;
+		}
+		return z;
 	}
 	
 	
