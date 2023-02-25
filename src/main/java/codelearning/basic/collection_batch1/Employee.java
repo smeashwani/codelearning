@@ -36,7 +36,7 @@ public class Employee implements Comparable{
 		//return this.salary >= another.salary? 1:-1;
 		int z = this.name.compareTo(another.name);
 		if(z==0) {
-			return this.salary >= another.salary? -1:1;
+			return this.salary >= another.salary? 1:-1;
 		}
 		return z;
 	}

@@ -2,15 +2,31 @@ package codelearning.basic.keywords;
 
 public class Parent {
 	
-	static void add(int a, int b) { 
-		System.out.println("Parent.add()");
+	String name;
+	
+	static 
+	{
+		System.out.println("parent...");
 	}
 	
-	void sub(int a, int b) { 
-		System.out.println("Parent.sub()");
+	Parent(){
+		name = "Guest";
+		System.out.println("Parent.Parent()...");
 	}
 	
-	void div() {}
+	Parent(int a){
+		name = "Guest";
+		System.out.println("Parent.Parent()");
+	}
 	
+	{
+		System.out.println("parent init...");
+	}
+	
+	
+	static 
+	{
+		System.out.println("parent");
+	}
 	
 }

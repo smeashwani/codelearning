@@ -2,17 +2,24 @@ package codelearning.basic.keywords;
 
 public class Child extends Parent{
 
-	static public void add(int a, int b) { 
-		System.out.println("Child.add()");
+	int age;
+	int salary;
+	
+	static 
+	{
+		System.out.println("child");
 	}
 	
-	@Override
-	public void sub(int a, int b) { 
-		System.out.println("Child.sub()");
-	}
-	
-	public void mul(int a, int b) { 
-		System.out.println("Child.sub()");
-	}
+//	Child(){
+//		super(3);
+//		name = "CHILD_ Guest";
+//		age =15;
+//		salary = 15_000;
+//		System.out.println("Child.Child()");
+//
+//	}
 
+	{
+		System.out.println("child init...");
+	}
 }
