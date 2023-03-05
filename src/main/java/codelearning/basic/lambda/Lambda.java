@@ -3,10 +3,13 @@ package codelearning.basic.lambda;
 public class Lambda {
 	
 	public static void main(String[] args) {
+		
+		int z=10;
 		Calc1 cal = new Calc1() {
 			@Override
 			public int add(int a, int b) {
 				System.out.println("Adding.....");
+				System.out.println(z);
 				return 100;
 			}
 		};

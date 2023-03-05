@@ -6,9 +6,9 @@ public class ExtendsTest {
 		c.add(10, 20);*/
 		
 		Parent p = new Child();
-		p.add(10, 10);
+	/*	p.add(10, 10);
 		p.sub(10, 10);
-		p.div();
+		p.div();*/
 		//Child c = new Parent();
 	}
 }
