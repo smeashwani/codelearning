@@ -5,12 +5,10 @@ target/*
 *.txt
 *.properties
 *.properties
-/target/
+target/
 *.class
 *.jpg
 *.class
 *.class
 *.class
 *.class
-target\
-target/
