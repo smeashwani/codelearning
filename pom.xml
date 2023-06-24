@@ -1,16 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.training</groupId>
-  <artifactId>codelearning</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>codelearning</name>
-  
-  	<properties>
-		 <java.version>17</java.version>
-		 <maven.compiler.source>${java.version}</maven.compiler.source>
-         <maven.compiler.target>${java.version}</maven.compiler.target>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.training</groupId>
+	<artifactId>codelearning</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>codelearning</name>
+
+	<properties>
+		<java.version>17</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -19,12 +30,13 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>codelearning.basic.gui.Swing_82_ColorChooser</mainClass>
+							<mainClass>
+								codelearning.basic.gui.Swing_82_ColorChooser</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
