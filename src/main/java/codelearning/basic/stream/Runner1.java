@@ -2,6 +2,7 @@ package codelearning.basic.stream;
 
 import java.util.ArrayList;
 import java.util.List;
+//import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,7 +19,7 @@ public class Runner1 {
 		l.add(e3);
 		l.add(e4);
 		l.add(new Employee(22,55000,"Guest5"));
-		System.out.println(l);
+		//System.out.println(l);
 //		ArrayList<Employee> l1 = new ArrayList();
 //		for (Employee employee : l) {
 //			if(employee.age > 20) {
@@ -26,10 +27,11 @@ public class Runner1 {
 //			}
 //		}
 //		System.out.println(l1);
-//		List<Employee> l1 = l.stream()
-//				.filter(e -> e.age > 20)
-//				.collect(Collectors.toList());
-//		System.out.println(l1);
+		Stream<Employee> stream = l.stream().filter(e -> e.age > 20);
+		l.add(new Employee(100,55000,"Guest100"));
+		l.add(new Employee(200,55000,"Guest200"));
+		List<Employee> l1 =stream.toList();
+		System.out.println(l1);
 		
 		
 //		ArrayList<String> l1 = new ArrayList();
@@ -42,13 +44,13 @@ public class Runner1 {
 		
 	
 		
-		Stream<String> map = l.parallelStream()
-				.filter(e -> e.age > 20)
-				.map(e-> e.name);
-		List<String> collect = map.collect(Collectors.toList());
-		
-		
-		System.out.println(collect);
+//		Stream<String> map = l.parallelStream()
+//				.filter(e -> e.age > 20)
+//				.map(e-> e.name);
+//		List<String> collect = map.collect(Collectors.toList());
+//		
+//		
+//		System.out.println(collect);
 		
 		
 	}

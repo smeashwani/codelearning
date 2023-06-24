@@ -19,7 +19,7 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	@Override
+	@MyAnnotation(value=100)
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + ", salary=" + salary + "]";
 	}
