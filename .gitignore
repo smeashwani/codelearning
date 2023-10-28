@@ -3,4 +3,5 @@
 target/
 *.jpeg
 *.txt
-*.properties
+.classpath
+.settings/
