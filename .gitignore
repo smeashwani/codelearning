@@ -1,7 +1,6 @@
-
+.settings/
 *.class
 target/
 *.jpeg
 *.txt
 .classpath
-.settings/
