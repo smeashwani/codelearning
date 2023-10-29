@@ -10,7 +10,7 @@ public class MyReflectionMethodRunner {
 		Class clz = obj.getClass();
 		Method[] declaredMethods = clz.getMethods();
 		for (Method method : declaredMethods) {
-			System.out.println(method.getName());
+			System.out.print(method.getName() + " ");
 			System.out.println(method.getParameterCount());
 		}
 		

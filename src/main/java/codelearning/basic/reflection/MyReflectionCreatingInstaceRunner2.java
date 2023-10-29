@@ -9,7 +9,8 @@ public class MyReflectionCreatingInstaceRunner2 {
 	public static void main(String[] args) throws ClassNotFoundException{
 		Class clz = Employee.class;
 		try {
-			Employee e = (Employee) clz.newInstance();
+			//Employee e = (Employee) clz.newInstance(); // deprecated
+			Employee e = (Employee) clz.getDeclaredConstructor().newInstance();
 			Method privateMethod= Employee.class.getDeclaredMethod("test");
 			privateMethod.setAccessible(true);
 			privateMethod.invoke(e, null);

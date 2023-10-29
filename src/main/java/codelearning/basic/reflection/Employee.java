@@ -4,6 +4,11 @@ package codelearning.basic.reflection;
 
 public class Employee {
 	
+	static 
+	{
+		System.out.println("static block");
+	}
+	
 	private void test() {
 		System.out.println("welcome to ducat");
 	}

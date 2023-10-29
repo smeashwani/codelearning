@@ -9,14 +9,12 @@ public class MyReflectionFieldsRunner {
 		Class clz = obj.getClass();
 		Field[] fields = clz.getFields();
 		for (Field field : fields) {
-			System.out.println(Modifier.toString(field.getModifiers()) +" "+field.getType() + " "+ field.getName());
+			System.out.print(Modifier.toString(field.getModifiers()) +" - "+field.getType() + " - "+ field.getName() );
 			try {
-				System.out.println((String)field.get(obj));
+				System.out.println(" = "+ (String)field.get(obj));
 			} catch (IllegalArgumentException | IllegalAccessException e) {
 			}
 		}
-		
-
 	}
 }
 
