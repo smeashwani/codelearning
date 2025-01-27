@@ -4,3 +4,12 @@ target/
 *.jpeg
 *.txt
 .classpath
+/.settings
+.classpath
+*.prefs
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/codelearning/.DS_Store
+.DS_Store
+.classpath
